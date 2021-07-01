@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block pageTitle  %}
+    Something Went wrong - we could not find that page!
+{% endblock %}
+
+{% block content %}
+    {% include "challenges/includes/header.html" with activePage="Go to Home" %}
+
+    <h1>We Could not find your page!</h1>
+    <p>Sorry we could not find the matching page!</p>
+{% endblock content %}

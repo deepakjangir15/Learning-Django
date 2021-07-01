@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Noto+Sans+JP:wght@500&display=swap');
+
+html {
+    font-family: 'Benne', serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(95, 92, 92);
+}

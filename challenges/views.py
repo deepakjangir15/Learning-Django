@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render
-from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect, Http404
 from django.urls import reverse
 from django.template.loader import render_to_string
 
@@ -51,4 +51,4 @@ def monthly_challenge(request, monthName):
             "monthName": monthName
         })
     except:
-        return HttpResponseNotFound("<h1>This month is not supported!!</h1>")
+        raise Http404()
